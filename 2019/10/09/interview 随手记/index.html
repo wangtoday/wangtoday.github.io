@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>interview 随手记录 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="hmtl， js， css， dom的关系和使用html：作为网页的布局上的框架和基础。 用来编写网页的结构， 即网页的组成元素和各个元素之间的层级关系。 DOM:使得js能够通过dom代码访问html的结构， 对html的元素结构直接进行干预。 通过对html的访问和操作，使得js的效果最终能够被施加于html上。 js 和 html本来是没有联系，两者之间都不能互相访问的， dom是作为两者沟">
+<meta name="keywords" content="web 笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="interview 随手记录">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;09&#x2F;interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hmtl， js， css， dom的关系和使用html：作为网页的布局上的框架和基础。 用来编写网页的结构， 即网页的组成元素和各个元素之间的层级关系。 DOM:使得js能够通过dom代码访问html的结构， 对html的元素结构直接进行干预。 通过对html的访问和操作，使得js的效果最终能够被施加于html上。 js 和 html本来是没有联系，两者之间都不能互相访问的， dom是作为两者沟">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;bXbdNa.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;IOZbCd.jpg">
+<meta property="og:updated_time" content="2019-10-09T14:34:36.528Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;bXbdNa.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-interview 随手记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/" class="article-date">
+  <time datetime="2019-10-09T14:18:23.000Z" itemprop="datePublished">2019-10-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      interview 随手记录
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="hmtl，-js，-css，-dom的关系和使用"><a href="#hmtl，-js，-css，-dom的关系和使用" class="headerlink" title="hmtl， js， css， dom的关系和使用"></a>hmtl， js， css， dom的关系和使用</h2><h4 id="html："><a href="#html：" class="headerlink" title="html："></a>html：</h4><p>作为网页的布局上的框架和基础。 用来编写网页的结构， 即网页的组成元素和各个元素之间的层级关系。</p>
+<h4 id="DOM"><a href="#DOM" class="headerlink" title="DOM:"></a>DOM:</h4><p>使得js能够通过dom代码访问html的结构， 对html的元素结构直接进行干预。 通过对html的访问和操作，使得js的效果最终能够被施加于html上。 js 和 html本来是没有联系，两者之间都不能互相访问的， dom是作为两者沟通的桥梁。<strong>js对html的单向作用</strong>， <em>由于是操作html元素， 所以只能在html完全后起作用，只能写在body之后</em>。</p>
+<h5 id="在html中使用JavaScript的方法："><a href="#在html中使用JavaScript的方法：" class="headerlink" title="在html中使用JavaScript的方法："></a>在html中使用JavaScript的方法：</h5><ol>
+<li><p>当前页面的书写， 就是直接把js代码写在html页面的任何地方</p>
+<blockquote>
+<p>包含在script标签元素内部的js代码将被从上到下依次解释。 解释器会解释一个函数的定义，然后将该定义保存在自己的环境当中。 在解释器对script元素内部的所有代码求值完毕以前，页面的其余内容都不会被浏览器加载或者现实</p>
+</blockquote>
+</li>
+<li><p>外部引入方式， 用到了 script标签的 src属性， <strong>需要注意的地方是 如果使用了src的这个属性， 那么script标签只会关注src指向的代码，而不会再去执行script标签内部（之间）的js代码</strong></p>
+</li>
+<li><p><em>在当前html标签中书写js代码</em>， 这个我很少用到。 先放一下代码： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;Javascript:alert(&apos;我就是不给你跳&apos;);&quot;&gt;这个 a 链接不会跳转&lt;/a&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;javascript:document.location.href=&apos;http://www.baidu.com&apos;&quot;&gt;普通按钮也可以跳转&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h5 id="Script标签的属性和JS代码的书写位置「more」"><a href="#Script标签的属性和JS代码的书写位置「more」" class="headerlink" title="Script标签的属性和JS代码的书写位置「more」"></a>Script标签的属性和JS代码的书写位置「more」</h5><blockquote>
+<p>无论何种方式书写Js代码，只要不存在 defer 和 async的属性， 浏览器都会按照 script 元素在页面出现的先后顺序对他们一次进行解析。 换句话说在第一个script元素包含的代码解析完毕之后，第二个包含的代码才会被解析，然后是三， 四 这样的顺序。</p>
+</blockquote>
+<p><strong>上面这个就涉及到了defer的属性， 相信在后面我们还会接触到的</strong></p>
+<p>按照传统的做法，所有的 JavaScript 代码都需要书写在 <code>&lt;head&gt;</code> 标签当中，但是这样所有的 CSS 样式、JavaScript 脚本全部加载完成后，再加载 HTML 代码中的 body 部分，就会影响当前页面的加载速度，所以，推荐的书写 JavaScript 脚本的位置是在 body 的末尾部分，</p>
+<h5 id="script标签元素的属性"><a href="#script标签元素的属性" class="headerlink" title="script标签元素的属性"></a>script标签元素的属性</h5><ul>
+<li>async 表示应该立即下载脚本，但不应该妨碍页面中的其他操作</li>
+<li>defer 表示脚本可以延迟到文档完全被解析和显示之后再执行。</li>
+</ul>
+<h5 id="head标签的一点点涉猎"><a href="#head标签的一点点涉猎" class="headerlink" title="head标签的一点点涉猎"></a>head标签的一点点涉猎</h5><p>head标签包含了当前文档的元数据。 元数据的意思就是描述数据的数据，比如文档的标题，使用的字符集，关键字等信息。 这些信息并不会真正的被浏览器所渲染。 </p>
+<p>但是head标签</p>
+<ol>
+<li>设定网站的样式</li>
+<li>加载和运行脚本</li>
+<li>为搜索引擎提供关键字，做seo</li>
+<li>设定viewport，告诉设备如何进行选软</li>
+<li>dns-prefetch 提前对某些域名进行dns解析「预浏览」</li>
+</ol>
+<p><strong>关于在head里面放置script和在body尾部方式script的页面处理流程问题</strong></p>
+<p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/bXbdNa.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/IOZbCd.jpg" alt=""></p>
+<p>defer 和 async这里的区别是， defer使用了以后， 仍然按照顺序来执行script，async就不会。</p>
+<p>知乎有一个更深层次的介绍， 可以看一下， 关于head里标签的</p>
+<p><a href="https://zhuanlan.zhihu.com/p/56920476" target="_blank" rel="noopener">what‘s in your head</a></p>
+<hr>
+<h3 id="三者之间关系的描述："><a href="#三者之间关系的描述：" class="headerlink" title="三者之间关系的描述："></a>三者之间关系的描述：</h3><p><strong>DOM，浏览器，HTML，javasript，css之间的关系</strong>可以理解成；一个画家(程序员)用画笔(javascript)画了个画(DOM),接着打印机（浏览器）打印，在打印过程中加上彩墨(css),最终一张漂亮好看的一张纸（html）就展示在大家面前</p>
+<p>Dom和html之间的关系： 浏览器拿到dom这棵树，将其渲染成html</p>
+<p>dom算是因，html算是果</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/" data-id="ck3fnip9e0000zl9w756p36eq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-%E7%AC%94%E8%AE%B0/" rel="tag">web 笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/09/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8C%E7%BA%A2%E5%AE%9D%E4%B9%A6%E3%80%8D%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js面向对象程序设计「红宝书」笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-%E7%AC%94%E8%AE%B0/" rel="tag">web 笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%8D%E4%B9%A0/" rel="tag">复习</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/web-%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">web 笔记</a> <a href="/tags/%E5%A4%8D%E4%B9%A0/" style="font-size: 10px;">复习</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/">interview 随手记录</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/09/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8C%E7%BA%A2%E5%AE%9D%E4%B9%A6%E3%80%8D%E7%AC%94%E8%AE%B0/">js面向对象程序设计「红宝书」笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/09/http%E7%9A%84%E9%98%9F%E5%A4%B4%E9%98%BB%E5%A1%9E%E5%92%8C%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/">http的队头阻塞和多路复用</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/09/%E5%86%99%E5%9C%A8%E7%AC%AC%E4%B8%80%E7%AF%87/">写在第一篇</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

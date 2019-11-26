@@ -5,14 +5,24 @@
   
 
   
-  <title>Hexo</title>
+  <title>js面向对象程序设计「红宝书」笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="正式开始准备面试了 时间大概是3:00 pm  先看一个小时的书，平复一下心情💢。 对象工厂模式什么是工厂模式： 工厂模式是抽象了创建具体对象的过程。 构造函数模式构造函数里面New的作用是什么？   创建一个新对象  将构造函数的作用域赋予给新对象，因此this就指向了这个对象  执行构造函数中的代码  返回新对象 1234567891011function Person(name,age,j">
+<meta name="keywords" content="web 笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js面向对象程序设计「红宝书」笔记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;09&#x2F;js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8C%E7%BA%A2%E5%AE%9D%E4%B9%A6%E3%80%8D%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="正式开始准备面试了 时间大概是3:00 pm  先看一个小时的书，平复一下心情💢。 对象工厂模式什么是工厂模式： 工厂模式是抽象了创建具体对象的过程。 构造函数模式构造函数里面New的作用是什么？   创建一个新对象  将构造函数的作用域赋予给新对象，因此this就指向了这个对象  执行构造函数中的代码  返回新对象 1234567891011function Person(name,age,j">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;eaTiGmCjSA6UFXE7p3aE4w_thumb_56d5.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;6dshiNb%RHCCePf0boM0kQ_thumb_56d7.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;0bWzKUEKSP65+UDaUtH8ZQ_thumb_56d8.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;w%DlDtlNTX27Kvy549I1Jg_thumb_56d9.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;l2gz4Dx%R%GeE5fB%KJs4Q_thumb_56da.jpg">
+<meta property="og:updated_time" content="2019-10-09T14:18:43.504Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;wangtoday&#x2F;Picturebed&#x2F;master&#x2F;eaTiGmCjSA6UFXE7p3aE4w_thumb_56d5.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,90 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-interview 随手记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/" class="article-date">
-  <time datetime="2019-10-09T14:18:23.000Z" itemprop="datePublished">2019-10-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/">interview 随手记录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="hmtl，-js，-css，-dom的关系和使用"><a href="#hmtl，-js，-css，-dom的关系和使用" class="headerlink" title="hmtl， js， css， dom的关系和使用"></a>hmtl， js， css， dom的关系和使用</h2><h4 id="html："><a href="#html：" class="headerlink" title="html："></a>html：</h4><p>作为网页的布局上的框架和基础。 用来编写网页的结构， 即网页的组成元素和各个元素之间的层级关系。</p>
-<h4 id="DOM"><a href="#DOM" class="headerlink" title="DOM:"></a>DOM:</h4><p>使得js能够通过dom代码访问html的结构， 对html的元素结构直接进行干预。 通过对html的访问和操作，使得js的效果最终能够被施加于html上。 js 和 html本来是没有联系，两者之间都不能互相访问的， dom是作为两者沟通的桥梁。<strong>js对html的单向作用</strong>， <em>由于是操作html元素， 所以只能在html完全后起作用，只能写在body之后</em>。</p>
-<h5 id="在html中使用JavaScript的方法："><a href="#在html中使用JavaScript的方法：" class="headerlink" title="在html中使用JavaScript的方法："></a>在html中使用JavaScript的方法：</h5><ol>
-<li><p>当前页面的书写， 就是直接把js代码写在html页面的任何地方</p>
-<blockquote>
-<p>包含在script标签元素内部的js代码将被从上到下依次解释。 解释器会解释一个函数的定义，然后将该定义保存在自己的环境当中。 在解释器对script元素内部的所有代码求值完毕以前，页面的其余内容都不会被浏览器加载或者现实</p>
-</blockquote>
-</li>
-<li><p>外部引入方式， 用到了 script标签的 src属性， <strong>需要注意的地方是 如果使用了src的这个属性， 那么script标签只会关注src指向的代码，而不会再去执行script标签内部（之间）的js代码</strong></p>
-</li>
-<li><p><em>在当前html标签中书写js代码</em>， 这个我很少用到。 先放一下代码： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;Javascript:alert(&apos;我就是不给你跳&apos;);&quot;&gt;这个 a 链接不会跳转&lt;/a&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;javascript:document.location.href=&apos;http://www.baidu.com&apos;&quot;&gt;普通按钮也可以跳转&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h5 id="Script标签的属性和JS代码的书写位置「more」"><a href="#Script标签的属性和JS代码的书写位置「more」" class="headerlink" title="Script标签的属性和JS代码的书写位置「more」"></a>Script标签的属性和JS代码的书写位置「more」</h5><blockquote>
-<p>无论何种方式书写Js代码，只要不存在 defer 和 async的属性， 浏览器都会按照 script 元素在页面出现的先后顺序对他们一次进行解析。 换句话说在第一个script元素包含的代码解析完毕之后，第二个包含的代码才会被解析，然后是三， 四 这样的顺序。</p>
-</blockquote>
-<p><strong>上面这个就涉及到了defer的属性， 相信在后面我们还会接触到的</strong></p>
-<p>按照传统的做法，所有的 JavaScript 代码都需要书写在 <code>&lt;head&gt;</code> 标签当中，但是这样所有的 CSS 样式、JavaScript 脚本全部加载完成后，再加载 HTML 代码中的 body 部分，就会影响当前页面的加载速度，所以，推荐的书写 JavaScript 脚本的位置是在 body 的末尾部分，</p>
-<h5 id="script标签元素的属性"><a href="#script标签元素的属性" class="headerlink" title="script标签元素的属性"></a>script标签元素的属性</h5><ul>
-<li>async 表示应该立即下载脚本，但不应该妨碍页面中的其他操作</li>
-<li>defer 表示脚本可以延迟到文档完全被解析和显示之后再执行。</li>
-</ul>
-<h5 id="head标签的一点点涉猎"><a href="#head标签的一点点涉猎" class="headerlink" title="head标签的一点点涉猎"></a>head标签的一点点涉猎</h5><p>head标签包含了当前文档的元数据。 元数据的意思就是描述数据的数据，比如文档的标题，使用的字符集，关键字等信息。 这些信息并不会真正的被浏览器所渲染。 </p>
-<p>但是head标签</p>
-<ol>
-<li>设定网站的样式</li>
-<li>加载和运行脚本</li>
-<li>为搜索引擎提供关键字，做seo</li>
-<li>设定viewport，告诉设备如何进行选软</li>
-<li>dns-prefetch 提前对某些域名进行dns解析「预浏览」</li>
-</ol>
-<p><strong>关于在head里面放置script和在body尾部方式script的页面处理流程问题</strong></p>
-<p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/bXbdNa.jpg" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/IOZbCd.jpg" alt=""></p>
-<p>defer 和 async这里的区别是， defer使用了以后， 仍然按照顺序来执行script，async就不会。</p>
-<p>知乎有一个更深层次的介绍， 可以看一下， 关于head里标签的</p>
-<p><a href="https://zhuanlan.zhihu.com/p/56920476" target="_blank" rel="noopener">what‘s in your head</a></p>
-<hr>
-<h3 id="三者之间关系的描述："><a href="#三者之间关系的描述：" class="headerlink" title="三者之间关系的描述："></a>三者之间关系的描述：</h3><p><strong>DOM，浏览器，HTML，javasript，css之间的关系</strong>可以理解成；一个画家(程序员)用画笔(javascript)画了个画(DOM),接着打印机（浏览器）打印，在打印过程中加上彩墨(css),最终一张漂亮好看的一张纸（html）就展示在大家面前</p>
-<p>Dom和html之间的关系： 浏览器拿到dom这棵树，将其渲染成html</p>
-<p>dom算是因，html算是果</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/" data-id="ck3fnip9e0000zl9w756p36eq" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-%E7%AC%94%E8%AE%B0/" rel="tag">web 笔记</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-js面向对象程序设计「红宝书」笔记" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-js面向对象程序设计「红宝书」笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/09/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8C%E7%BA%A2%E5%AE%9D%E4%B9%A6%E3%80%8D%E7%AC%94%E8%AE%B0/" class="article-date">
   <time datetime="2019-10-09T14:18:23.000Z" itemprop="datePublished">2019-10-09</time>
@@ -155,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/09/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8C%E7%BA%A2%E5%AE%9D%E4%B9%A6%E3%80%8D%E7%AC%94%E8%AE%B0/">js面向对象程序设计「红宝书」笔记</a>
+    <h1 class="article-title" itemprop="name">
+      js面向对象程序设计「红宝书」笔记
     </h1>
   
 
@@ -457,159 +384,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-http的队头阻塞和多路复用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/09/http%E7%9A%84%E9%98%9F%E5%A4%B4%E9%98%BB%E5%A1%9E%E5%92%8C%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" class="article-date">
-  <time datetime="2019-10-09T14:14:28.000Z" itemprop="datePublished">2019-10-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2019/10/09/interview%20%E9%9A%8F%E6%89%8B%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/09/http%E7%9A%84%E9%98%9F%E5%A4%B4%E9%98%BB%E5%A1%9E%E5%92%8C%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/">http的队头阻塞和多路复用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/O6p11y.jpg" alt=""></p>
-<h2 id="http中队头阻塞和多路复用"><a href="#http中队头阻塞和多路复用" class="headerlink" title="http中队头阻塞和多路复用"></a>http中队头阻塞和多路复用</h2><p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/iW3j2p.png" alt=""></p>
-<p>看到网上有人面试过这个问题， <strong>恰好我也不知道</strong></p>
-<p>上面那张图， 不是很清晰。</p>
-<p>图1第一种请求方式就是单次发送request请求，收到response后再进行下一次请求。 <strong>低效</strong></p>
-<p>于是 http1.1 提出了 管线化技术（pipelining）技术，就是第二个方式，一次性发送多个request的请求。而且这个pipelining再接受response返回的时候，也必须依顺序接受，如果前一个请求遇到阻塞，后面的请求即使已经处理完毕，仍然需要等待阻塞的请求处理完毕。 </p>
-<p>也就是第二个和第三个图的情形， 显示的就是队的头部阻塞。</p>
-<p>为了解决上述阻塞问题， http2中提出了多路复用的技术（multiplexing）。 http2中将多个请求复用同一个tcp连接中， 将一个tcp连接分成若干个流，每个流可以传输若干个消息。</p>
-<hr>
-<p>上面的讲法还是有一点模式， 我们转战第二个博文看看吧， </p>
-<p>http在响应上一个请求之前往往无法接受新的请求。因此网络延迟和请求的复杂性决定了其空闲程度。值得注意的是，在http/1.1支持流水线操作，但是仍然没有解决这种阻塞的问题。（如上图1）</p>
-<p><strong>还是不太懂， 又找了一个博文-  - #</strong></p>
-<p>首先， 关于http队头阻塞的问题。 </p>
-<p>Http1.1通过pipelining管道技术实现了一次性发送多个请求，以提高吞吐量和性能，但是上图2显示有一个阻塞等待的问题。</p>
-<p>http2的方式是数据分帧， 多个请求复用同一个tcp连接，然后每个request-response都被拆分成若干个frame发送，这样即使一个请求被阻塞了，也不会影响其他的请求，如上面的最后一个图。 </p>
-<p>但是如果队头阻塞的界别是tcp层面的阻塞， 那么就没办法了。 目前的这个解决方法是http request级别的解决方法。</p>
-<h2 id="深层次的解释队头阻塞"><a href="#深层次的解释队头阻塞" class="headerlink" title="深层次的解释队头阻塞"></a>深层次的解释队头阻塞</h2><h4 id="先说一下tcp层面的队头阻塞"><a href="#先说一下tcp层面的队头阻塞" class="headerlink" title="先说一下tcp层面的队头阻塞"></a>先说一下tcp层面的队头阻塞</h4><p>队头阻塞（head-of-line blocking）发生在一个TCP分节丢失，导致其后续分节不按序到达接收端的时候。该后续分节将被接收端一直保持直到丢失的第一个分节被发送端重传并到达接收端为止「这个地方的意思是，如果有a,b,c三个传输，a出了问题，虽然b和c都能接着发送到接受端，但是接受端会先保持这个b和c的发送信息，一直到a完美的重新发送过去才会进行b和c的处理操作」。该后续分节的延迟递送确保接收应用进程能够<strong>按照发送端的发送顺序接收数据</strong>。这种为了达到完全有序而引入的延迟机制非常有用，但也有不利之处。</p>
-<p>假设在单个TCP连接上发送语义<strong>独立</strong>的消息，比如说服务器可能发送3幅不同的图像供Web浏览器显示。为了营造这几幅图像在用户屏幕上并行显示的效果，服务器先发送第一幅图像的一个断片，再发送第二幅图像的一个断片，然后再发送第三幅图像的一个断片；服务器重复这个过程，直到这3幅图像全部成功地发送到浏览器为止。</p>
-<p>要是第一幅图像的某个断片内容的TCP分节丢失了，<strong>客户端将保持已到达的不按序的所有数据</strong>，直到丢失的分节重传成功。这样不仅延缓了第一幅图像数据的递送，也延缓了第二幅和第三幅图像数据的递送。</p>
-<h4 id="http队头阻塞"><a href="#http队头阻塞" class="headerlink" title="http队头阻塞"></a>http队头阻塞</h4><p>要介绍HTTP队头阻塞，就需要先讲讲HTTP的管道化（pipelining）。</p>
-<h5 id="http管道化是什么"><a href="#http管道化是什么" class="headerlink" title="http管道化是什么"></a>http管道化是什么</h5><p>管道化和非管道化的图示：</p>
-<p><img src="https://raw.githubusercontent.com/wangtoday/Picturebed/master/TRpyaM.jpg" alt=""></p>
-<p>http1.1中， 在响应到达之前，可以将多个请求放到队列（如右图），当第一条请求发往服务器的时候，二三条也可以发送。</p>
-<h5 id="http管道化产生的背景"><a href="#http管道化产生的背景" class="headerlink" title="http管道化产生的背景"></a>http管道化产生的背景</h5><p>在一般情况下，HTTP遵守“请求-响应”的模式，也就是客户端每次发送一个请求到服务端，服务端返回响应。这种模式非常容易理解，但是效率并不是那么高，为了提高速度和效率，人们做了很多尝试：</p>
-<ul>
-<li>最简单的情况下，服务端一旦返回响应后就会把对应的连接关闭，客户端的多个请求实际上是串行发送的。</li>
-<li>除此之外，客户端可以选择同时创建多个连接，在多个连接上并行的发送不同请求。但是创建更多连接也带来了更多的消耗，当前大部分浏览器都会限制对同一个域名的连接数。</li>
-<li>从HTTP1.0开始增加了持久连接的概念（HTTP1.0的Keep-Alive和HTTP1.1的persistent），可以使HTTP能够复用已经创建好的连接。客户端在收到服务端响应后，可以复用上次的连接发送下一个请求，而不用重新建立连接。</li>
-<li>现代浏览器大多采用并行连接与持久连接共用的方式提高访问速度，对每个域名建立并行地少量持久连接。</li>
-<li>而在持久连接的基础上，HTTP1.1进一步地支持在持久连接上使用管道化（pipelining）特性。管道化允许客户端在已发送的请求收到服务端的响应之前发送下一个请求，借此来减少等待时间提高吞吐；如果多个请求能在同一个TCP分节发送的话，还能提高网络利用率。但是因为HTTP管道化本身可能会导致队头阻塞的问题，以及一些其他的原因，现代浏览器默认都关闭了管道化。</li>
-</ul>
-<h5 id="管道化的限制"><a href="#管道化的限制" class="headerlink" title="管道化的限制"></a>管道化的限制</h5><ol>
-<li>管道化要求服务端按照<strong>请求发送的顺序返回响应（FIFO）</strong>，原因很简单，HTTP请求和响应并没有序号标识，无法将乱序的响应与请求关联起来。</li>
-<li>客户端需要保持未收到响应的请求，当连接意外中断时，需要重新发送这部分请求。</li>
-<li>只有幂等的请求才能进行管道化，也就是只有GET和HEAD请求才能管道化，否则可能会出现意料之外的结果。 这个地方是和2相辅相成的。 因为幂等http方法代表的是同一个请求被执行一次或者执行多次的效果是一样的，服务器的状态也是一样的换句话说，幂等不应该具有副作用。而2里面表示的就是如果管道中的某一个请求没有收到回应，那么还要重新发送这部分的请求。</li>
-</ol>
-<blockquote>
-<h5 id="根据上面管道化的限制，就能得到管道化会有一个队头阻塞的副作用。"><a href="#根据上面管道化的限制，就能得到管道化会有一个队头阻塞的副作用。" class="headerlink" title="根据上面管道化的限制，就能得到管道化会有一个队头阻塞的副作用。"></a>根据上面管道化的限制，就能得到管道化会有一个队头阻塞的副作用。</h5></blockquote>
-<h3 id="如何解决队头阻塞？"><a href="#如何解决队头阻塞？" class="headerlink" title="如何解决队头阻塞？"></a>如何解决队头阻塞？</h3><p>对于HTTP1.1中管道化导致的<strong>请求/响应级别的队头阻塞</strong>，可以使用HTTP2解决。<strong>HTTP2不使用管道化的方式，而是引入了帧、消息和数据流等概念</strong>，<em>每个请求/响应被称为消息，每个消息都被拆分成若干个帧进行传输</em>，<strong>每个帧都分配一个序号</strong>。每个帧在传输是属于一个数据流，而一个连接上可以存在多个流，各个帧在流和连接上独立传输，<strong>到达之后在组装成消息</strong>「这个组装，就是根据每个帧的序号来组装的」，这样就避免了请求/响应阻塞。</p>
-<p>当然，即使使用HTTP2，如果HTTP2底层使用的是TCP协议，仍可能出现TCP队头阻塞。</p>
-<h3 id="如何解决tcp队头阻塞？"><a href="#如何解决tcp队头阻塞？" class="headerlink" title="如何解决tcp队头阻塞？"></a>如何解决tcp队头阻塞？</h3><p>TCP中的队头阻塞的产生是由TCP自身的实现机制决定的，<strong>无法避免</strong>。想要在应用程序当中避免TCP队头阻塞带来的影响，只有舍弃TCP协议。</p>
-<p>比如google推出的<a href="https://link.juejin.im/?target=https%3A%2F%2Fkm.sankuai.com%2Fpage%2F108687233">quic</a>协议，在某种程度上可以说避免了TCP中的队头阻塞，因为它根本不使用TCP协议，而是在UDP协议的基础上实现了可靠传输。而UDP是面向数据报的协议，数据报之间不会有阻塞约束。</p>
-<p>此外还有一个SCTP（流控制传输协议），它是和TCP、UDP在同一层次的传输协议。SCTP的多流特性也可以尽可能的避免队头阻塞的情况。</p>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>从TCP队头阻塞和HTTP队头阻塞的原因我们可以看到，出现队头阻塞的原因有两个：</p>
-<ol>
-<li>独立的消息数据都在一个链路上传输，也就是有一个“队列”。比如TCP只有一个流，多个HTTP请求共用一个TCP连接</li>
-<li>队列上传输的数据有严格的顺序约束。比如<strong>TCP要求数据严格按照序号顺序</strong>，<strong>HTTP管道化要求响应严格按照请求顺序返回</strong></li>
-</ol>
-<p>所以要避免队头阻塞，就需要从以上两个方面出发，比如quic协议不使用TCP协议而是使用UDP协议，SCTP协议支持一个连接上存在多个数据流等等。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/09/http%E7%9A%84%E9%98%9F%E5%A4%B4%E9%98%BB%E5%A1%9E%E5%92%8C%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" data-id="ck3fnip9w0006zl9wdq1nat89" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/" rel="tag">web</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-写在第一篇" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/09/%E5%86%99%E5%9C%A8%E7%AC%AC%E4%B8%80%E7%AF%87/" class="article-date">
-  <time datetime="2019-10-09T07:23:40.000Z" itemprop="datePublished">2019-10-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          interview 随手记录
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/09/%E5%86%99%E5%9C%A8%E7%AC%AC%E4%B8%80%E7%AF%87/">写在第一篇</a>
-    </h1>
   
+    <a href="/2019/10/09/http%E7%9A%84%E9%98%9F%E5%A4%B4%E9%98%BB%E5%A1%9E%E5%92%8C%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">http的队头阻塞和多路复用</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="先说一下为什么要写博客吧。"><a href="#先说一下为什么要写博客吧。" class="headerlink" title="先说一下为什么要写博客吧。"></a>先说一下为什么要写博客吧。</h3><p>17年中开始工作， 到8月份离职也有2年了，加上还是在悉尼/香港的工作环境/经验。我之前应该是从找工作的不顺到工作后的还算顺利吧，按照周围朋友的套路，两年时间，年薪水破100k应该是无压力，18年涨了一波也拿到75k了。自信满满地跟着媳妇一起来到香港，刚来也拿到一个29k的月薪，想着按照这个套路，年中再涨一波，月薪40k应该也问题不大。</p>
-<p>6月份到现在香港的变化让人有点摸不着头脑，过去近2年的工作经验，也让我决定去深圳找工作。</p>
-<ul>
-<li><p>具体的原因除了香港最近恶化的局势，也是<em>因为对深圳更为发达的挨踢的神往</em>。</p>
-</li>
-<li><p>同时由于自己对职业的焦虑和不安，外加自己没有在大型的挨踢公司工作的经验，一直以来很想体验一下。</p>
-</li>
-</ul>
-<p>6月中和老板说了一下自己的情况，2个月后离职。为了再去深圳之前知道自己几斤几两，8月之前在香港也投了一些简历。前前后后面了3个公司，拿了一个offer（<strong>35k/月</strong>）。</p>
-<p>一直都知道内地的薪水在中低级&amp;伪高级程序员的职位上相比香港or悉尼来说会低外边不少。来之前特意放低了自己的期待，心里的计划是好好的发育几年，后面再看怎么发展。 也让自己不留遗憾。</p>
-<p>一直到8月底故事的发展都很美好，做好决定去深圳的第一周，就拿到了平安的面试机会，和leader的友好交流后，他也根据我的情况在当天夜晚就告诉我<strong>愿意给我offer</strong>，只需等HR那边通过。</p>
-<p>如果一切都按照这个套路发展，</p>
-<p>我现在也不会写这个博客了。:(</p>
-<h3 id="我距离拿到第一份深圳的工作大概还差25个面试"><a href="#我距离拿到第一份深圳的工作大概还差25个面试" class="headerlink" title="我距离拿到第一份深圳的工作大概还差25个面试"></a>我距离拿到第一份深圳的工作大概还差25个面试</h3><p>后面就是一路坎坷。 第一份平安面试能拿到那个虽然最终没有拿到的offer是因为碰到一个愿意给我机会的大佬。第一个offer失败以后，他转告我让我去投平安的其他的position，于是平安这边后面加面了两个不同职位的面试。<strong>都倒在地一面</strong>，平安中心大楼的那个前端，倒也算是遇到一个愿意给我机会试试的小leader（年龄小的小），帮我去问了一下是否还会给我开一个等级低一点的职位。当然是<strong>否</strong> :(</p>
-<p>9月中以前，陆续还面了中兴的前端，自如的前端（这个双方没兴趣），有赞的前端，后面又被猎头劝着去试了试一个香港的公司。</p>
-<p>1，2，3，4，5，6，7，8前后一共面了8家。<strong>全军覆没。</strong></p>
-<p>心情down到极点，8家全部都是失败在第一面。我不愿意否认自己过去2年的努力，但只看结果的话，彷佛过去这两年的自己是划水而过。</p>
-<p>于是认识到找工作对我来说可能会是一个长期的过程？先给自己来了个真正的gap，回了趟家，开着小破车在家周边往返了1k多公里，然后又去了趟北京，把09年和基友约定的<strong>太阳神车</strong>坐了一遍。</p>
-<!--后面再接着补充吧-->
-
-<blockquote>
-<p><strong>后面还有新的确定的1，2，3，4，5，6，1，8个面试等着我</strong></p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/09/%E5%86%99%E5%9C%A8%E7%AC%AC%E4%B8%80%E7%AF%87/" data-id="ck3fnip9k0001zl9w2l5o7nub" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%8D%E4%B9%A0/" rel="tag">复习</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
