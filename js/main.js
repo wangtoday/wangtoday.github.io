@@ -40,7 +40,7 @@ $(document).ready(function() {
      * Display the menu if the menu icon is clicked.
      */
     menuIcon.click(function() {
-      if (menu.hasClass("animationOff") || menu.css("opacity") === '0') {
+      if (menu.hasClass("animationOff") || menu.css("opacity") === 0) {
         // menu.css("visibility", "visible");
         // 在这里试着添加一下动画， 让Menu的出现不那么突兀
         menuIcon.addClass("active");
