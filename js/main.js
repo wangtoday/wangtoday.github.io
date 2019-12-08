@@ -32,8 +32,8 @@ $(document).ready(function() {
      */
     if ($(document).width() >= 1440) {
       // menu.css("visibility", "visible");
-      // menu.addClass("animationOn");
-      menuIcon.addClass("active");
+      menu.addClass("animationOn");
+      // menuIcon.addClass("active");
     }
 
     /**
