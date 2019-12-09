@@ -750,7 +750,6 @@ body {
   animation: fadeoff 0.5s;
 }
 #header-post #menu {
-  opacity: 0;
   margin-right: 2rem;
 }
 #header-post #nav {
